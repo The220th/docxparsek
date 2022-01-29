@@ -36,6 +36,7 @@ class Line:
 
         if(xml.find("<w:tbl") != -1):     # Таблица
             self.__ifTable(xml)
+            print("\n\n" + f"{xml}" + "\n\n")
         elif(xml.find("<pic:pic") != -1): # Картинка
             self.__ifPic(xml)
         elif(xml.find("<w:t") != -1):     # Текст
@@ -67,25 +68,25 @@ class Line:
     def getType(self) -> str:
         return self.__type
 
-    def isText() -> bool:
+    def isText(self) -> bool:
         if(self.__type == Line.TEXT()):
             return True
         else:
             return False
 
-    def isImage() -> bool:
+    def isImage(self) -> bool:
         if(self.__type == Line.IMAGE()):
             return True
         else:
             return False
 
-    def isTable() -> bool:
+    def isTable(self) -> bool:
         if(self.__type == Line.TABLE()):
             return True
         else:
             return False
 
-    def isOther() -> bool:
+    def isOther(self) -> bool:
         if(self.__type == Line.OTHER()):
             return True
         else:

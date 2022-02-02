@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import zipfile
-from .image import *
-from .line import Line
+from . import *
+#from . import Line
 import re
 
 class Doc:

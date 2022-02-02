@@ -1,11 +1,11 @@
-from .doc import Doc
-from .line import Line
-from .text import Text
-from .image import Image
-from .table import Table
-from .row import Row
-from .cell import Cell
-from .run import Run
+from .thxpython import Doc
+from .thxpython import Line
+from .thxpython import Text
+from .thxpython import Image
+from .thxpython import Table
+from .thxpython import Row
+from .thxpython import Cell
+#from .thxpython import Run
 
 __all__ = [
     'Doc',
@@ -14,6 +14,5 @@ __all__ = [
     'Image',
     'Table',
     'Row',
-    'Cell',
-    'Run'
+    'Cell'
 ]

@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from .row import Row
+from . import Row
 
 # -*- coding: utf-8 -*-
 

@@ -1,4 +1,4 @@
-from .line import Line
+from . import Line
 import re
 
 # -*- coding: utf-8 -*-

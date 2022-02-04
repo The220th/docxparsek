@@ -7,10 +7,11 @@ from docxparsek import Image
 from docxparsek import Table
 
 if __name__ == "__main__":
-    
     #doc = Doc("./table.docx")
-    doc = Doc("./table3.docx")
+    #doc = Doc("./table3.docx")
     #doc = Doc("./table4.docx")
+    #doc = Doc("./text.docx")
+    doc = Doc("./check.docx")
 
     #print(doc.getDocXML())
     image_j = 0
@@ -29,6 +30,7 @@ if __name__ == "__main__":
             lli, llj = 0, 0
             for row in table:
                 llj = 0
+                #print(*row)
                 for cell in row:
                     for lline in cell:
                         if(lline.isText()):
